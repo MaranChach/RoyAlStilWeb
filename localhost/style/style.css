@@ -23,19 +23,34 @@ img {
 	box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 .product-img {
-	height: 200px;
+	height: 150px;
 }
-.product-title a {
+a {
+	color: #000;
+	font-weight: 500;	
+}
+
+.product-title{
 	color: #000;
 	font-weight: 500;
-	text-transform: uppercase;
+	width: 100%;
+    bottom: 90px;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+	border: #ececec;
+	background-color: white;
 }
+
 .product-desc {
-    max-height: 60px;
+	width: 100%;
+	bottom: 45px;
+	left: 0;
+	position: absolute;
     overflow: hidden;
 }
 .product-price {
-	bottom: 15px;
+	bottom: 10px;
 	left: 0;
 	position: absolute;
 	width: 100%;

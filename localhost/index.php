@@ -7,7 +7,10 @@
         <link rel="stylesheet" href="style/style.css">
     </head>
 
-    <body>    
+    <body>   
+        
+
+
          
         <div class="container content">           
             <div class="row">             
@@ -28,6 +31,7 @@
                             ?>
                     </form>
                 </div>
+                
                 <div class="col-md-8">                    
                     <?php                     
                         while($type = current($typeArray))
@@ -44,16 +48,22 @@
                                         echo("<div class=\"row\">\n");
                                     }                                                                      
                                         echo("<div class=\"col-sm-4\">\n");
+                                            echo("<form action=\"goodspage.php\" method=\"POST\">");
                                             echo("<div class=\"product\">\n");
                                                 echo("<div class=\"product-img\">\n");
                                                     echo("<a href=\"#\"><img src=\"" . $line[6] . "\" alt=\"\"></a>\n");
                                                 echo("</div>\n");
-                                                echo("<p class=\"product-title\">\n");
+                                                echo("<input type=\"hidden\" readonly=\"true\" value=\"".$line[0]."\" name=\"product-id\">\n");
+                                                //echo("<input type=\"text\" readonly=\"true\" value=\"".$line[1]."\" name=\"product-title\" class=\"product-title\">\n");
+                                                echo("<input type=\"submit\" value=\"".$line[1]."\" name=\"product-title\" class=\"product-title\">\n");
+                                                
+                                                /*echo("<p class=\"product-title\">\n");
                                                     echo("<a href=\"#\">" . $line[1] . "</a>\n");
-                                                echo("</p>\n");
+                                                echo("</p>\n");*/
                                                 echo("<p class=\"product-desc\">Осталось: " . $line[3] . "</p>\n");
                                                 echo("<p class=\"product-price\">" . $line[2] . " р.</p>\n");
                                             echo("</div>\n");
+                                            echo("</form>");
                                         echo("</div>\n");                                  
                                     if(($elementCounter % 3) == 2)
                                     {
