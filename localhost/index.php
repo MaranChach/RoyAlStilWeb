@@ -8,7 +8,15 @@
     </head>
 
     <body>   
-        
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1" style="margin-left: 25%">
+                RoyalStil
+            </span>
+
+            <span class="navbar-text" style="margin-right: 10%">
+                +7(999)999 99-99
+            </span>
+        </nav>
 
 
          
