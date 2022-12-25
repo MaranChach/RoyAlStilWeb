@@ -96,6 +96,7 @@ a {
 	height: 40px;
 	border: none;
 	border-bottom: 1px solid gray;
+	background: white;
 }
 .catalog{
 	width: 70%;
